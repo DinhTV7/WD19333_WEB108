@@ -9,6 +9,8 @@
 
 <body>
     <!-- 
+        Chữa bài tập buổi 9:
+        
         Tạo mảng thông tin 3 sinh viên gồm các thuộc tính
         Họ tên, Năm sinh, Điểm trung bình
         Hiển thị toàn bộ thông tin sinh viên ra HTML dưới dạng table

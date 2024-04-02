@@ -88,11 +88,13 @@ $arrNYC_2 = [
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Danh sách người yêu cũ</h1>
     <!-- Hiển thị toàn bộ thông tin nyc của mảng trên ra table -->
@@ -104,9 +106,9 @@ $arrNYC_2 = [
             <th>Lớp</th>
         </thead>
         <tbody>
-            <?php 
-                $stt = 1;
-                foreach ($arrNYC_2 as $item) : 
+            <?php
+            $stt = 1;
+            foreach ($arrNYC_2 as $item) :
             ?>
                 <!-- Công việc cần lặp -->
                 <tr>
@@ -119,4 +121,20 @@ $arrNYC_2 = [
         </tbody>
     </table>
 </body>
+
 </html>
+
+<!-- 
+    BÀI TẬP:
+        Tạo mảng thông tin 3 sinh viên gồm các thuộc tính
+        Họ tên, Năm sinh, Điểm trung bình
+        Hiển thị toàn bộ thông tin sinh viên ra HTML dưới dạng table
+
+        Tạo 1 cốt Trạng thái ở cuối bảng hiển thị
+        Nếu điểm TB < 5 hiển thị "Toạch", >= 5 hiển thị "Qua môn"
+
+        Tạo 1 cột Tuổi ở cuối bảng
+        Thực tính tuổi và hiển thị ra
+        Nếu tuổi < 18 thì màu backgroub là màu đỏ
+        Nếu tuổi >= 18 thì màu backgroub là màu xanh (green)
+     -->
