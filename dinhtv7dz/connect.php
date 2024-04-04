@@ -16,8 +16,10 @@ try {
     // Thiết lập chế độ lỗi
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    echo "Kết nối thành công";
+    // echo "Kết nối thành công";
 
 } catch (PDOException $e) {
+
     echo "Lỗi kết nối CSDL: " . $e->getMessage();
+
 }
