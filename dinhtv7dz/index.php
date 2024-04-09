@@ -32,6 +32,9 @@ $listUser = $stmt_listUser->fetchAll(PDO::FETCH_ASSOC);
 
 <body>
     <h3>Danh sách người dùng</h3>
+    <a href="create.php">
+        <button>Thêm mới</button>
+    </a>
     <table border="1">
         <thead>
             <th>STT</th>
@@ -50,6 +53,9 @@ $listUser = $stmt_listUser->fetchAll(PDO::FETCH_ASSOC);
                     <td><?= $value["phone"] ?></td>
                     <td><?= $value["status"] == 1 ? "Hoạt động" : "Ngừng hoạt động" ?></td>
                     <td>
+                        <a href="update.php?id_user=<?= $value["id"] ?>">
+                            <button>Sửa</button>
+                        </a>
                         <a href="delete.php?id_user=<?= $value["id"] ?>" 
                             onclick="return confirm('Bạn có muốn xóa hay không?')">
                             <button>Xóa</button>
